@@ -93,14 +93,14 @@ function App() {
       <section id="projects" className="mx-auto max-w-6xl px-6 py-20">
   <h2 className="text-3xl font-bold">Projects</h2>
 
-  <div className="mt-10 grid gap-8 md:grid-cols-3">
+  <div className="mt-10 grid gap-8 lg:grid-cols-3">
 
     {/* Project 1 */}
     <div className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg">
       <img
         src="/projects/dashboard.png"
         alt="Sentiment Analysis"
-        className="mb-6 h-48 w-full rounded-xl border border-slate-800 object-cover"
+        className="mb-6 h-40 w-full rounded-xl border border-slate-800 object-cover"
       />
 
       <p className="text-sm font-semibold uppercase tracking-widest text-blue-400">
@@ -143,7 +143,7 @@ function App() {
       <img
         src="/projects/puella.png"
         alt="PuellaStudio"
-        className="mb-6 h-48 w-full rounded-xl border border-slate-800 object-cover"
+        className="mb-6 h-40 w-full rounded-xl border border-slate-800 object-cover"
       />
 
       <p className="text-sm font-semibold uppercase tracking-widest text-pink-400">
@@ -193,7 +193,7 @@ function App() {
   <img
     src="/projects/spbe.png"
     alt="SPBE Project"
-    className="mb-6 h-48 w-full rounded-xl border border-slate-800 object-cover"
+    className="mb-6 h-40 w-full rounded-xl border border-slate-800 object-cover"
   />
 
   <p className="text-sm font-semibold uppercase tracking-widest text-green-400">
@@ -201,7 +201,7 @@ function App() {
   </p>
 
   <h3 className="mt-3 text-2xl font-bold">
-    SPBE Website Development
+    SPBE Dashboard
   </h3>
 
   <p className="mt-4 text-slate-400">
