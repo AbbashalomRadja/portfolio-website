@@ -93,7 +93,7 @@ function App() {
       <section id="projects" className="mx-auto max-w-6xl px-6 py-20">
   <h2 className="text-3xl font-bold">Projects</h2>
 
-  <div className="mt-10 grid gap-8 md:grid-cols-2">
+  <div className="mt-10 grid gap-8 md:grid-cols-3">
 
     {/* Project 1 */}
     <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg">
@@ -188,7 +188,49 @@ function App() {
         </a>
       </div>
     </div>
+{/* Project 3 */}
+<div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg">
+  <img
+    src="/projects/spbe.png"
+    alt="SPBE Project"
+    className="mb-6 rounded-xl border border-slate-800"
+  />
 
+  <p className="text-sm font-semibold uppercase tracking-widest text-green-400">
+    Internship Project
+  </p>
+
+  <h3 className="mt-3 text-2xl font-bold">
+    SPBE Website Development
+  </h3>
+
+  <p className="mt-4 text-slate-400">
+    Contributed to the development of SPBE (Sistem Pemerintahan Berbasis Elektronik)
+    website during internship at Diskominfo Kota Batu with focus on frontend interface
+    and responsive web implementation.
+  </p>
+
+  <div className="mt-5 flex flex-wrap gap-2">
+    {["Laravel", "Bootstrap", "Frontend", "UI Design", "JavaScript"].map((item) => (
+      <span
+        key={item}
+        className="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300"
+      >
+        {item}
+      </span>
+    ))}
+  </div>
+
+  <div className="mt-6 flex flex-wrap gap-3">
+    <a
+      href="https://github.com/YosuaKybernan/SPBE.git"
+      target="_blank"
+      className="rounded-xl bg-green-600 px-5 py-3 font-medium transition hover:bg-green-700"
+    >
+      Repository
+    </a>
+  </div>
+</div>
   </div>
 </section>
 
