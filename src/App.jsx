@@ -96,11 +96,11 @@ function App() {
   <div className="mt-10 grid gap-8 md:grid-cols-3">
 
     {/* Project 1 */}
-    <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg">
+    <div className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg">
       <img
         src="/projects/dashboard.png"
         alt="Sentiment Analysis"
-        className="mb-6 rounded-xl border border-slate-800"
+        className="mb-6 h-48 w-full rounded-xl border border-slate-800 object-cover"
       />
 
       <p className="text-sm font-semibold uppercase tracking-widest text-blue-400">
@@ -127,7 +127,7 @@ function App() {
         ))}
       </div>
 
-      <div className="mt-6 flex gap-3">
+      <div className="mt-auto flex flex-wrap gap-3 pt-6">
         <a
           href="https://github.com/AbbashalomRadja/sentiment-analysis-naive-bayes"
           target="_blank"
@@ -139,11 +139,11 @@ function App() {
     </div>
 
     {/* Project 2 */}
-    <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg">
+    <div className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg">
       <img
         src="/projects/puella.png"
         alt="PuellaStudio"
-        className="mb-6 rounded-xl border border-slate-800"
+        className="mb-6 h-48 w-full rounded-xl border border-slate-800 object-cover"
       />
 
       <p className="text-sm font-semibold uppercase tracking-widest text-pink-400">
@@ -170,7 +170,7 @@ function App() {
         ))}
       </div>
 
-      <div className="mt-6 flex flex-wrap gap-3">
+      <div className="mt-auto flex flex-wrap gap-3 pt-6">
         <a
           href="https://github.com/AbbashalomRadja/puella-studio"
           target="_blank"
@@ -189,11 +189,11 @@ function App() {
       </div>
     </div>
 {/* Project 3 */}
-<div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg">
+<div className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg">
   <img
     src="/projects/spbe.png"
     alt="SPBE Project"
-    className="mb-6 rounded-xl border border-slate-800"
+    className="mb-6 h-48 w-full rounded-xl border border-slate-800 object-cover"
   />
 
   <p className="text-sm font-semibold uppercase tracking-widest text-green-400">
@@ -205,9 +205,7 @@ function App() {
   </h3>
 
   <p className="mt-4 text-slate-400">
-    Contributed to the development of SPBE (Sistem Pemerintahan Berbasis Elektronik)
-    website during internship at Diskominfo Kota Batu with focus on frontend interface
-    and responsive web implementation.
+    Contributed to the SPBE website development during internship at Diskominfo Kota Batu, focusing on frontend interface and responsive web implementation.
   </p>
 
   <div className="mt-5 flex flex-wrap gap-2">
@@ -221,7 +219,7 @@ function App() {
     ))}
   </div>
 
-  <div className="mt-6 flex flex-wrap gap-3">
+  <div className="mt-auto flex flex-wrap gap-3 pt-6">
     <a
       href="https://github.com/YosuaKybernan/SPBE.git"
       target="_blank"
