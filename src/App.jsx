@@ -91,43 +91,106 @@ function App() {
       </section>
 
       <section id="projects" className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="text-3xl font-bold">Projects</h2>
+  <h2 className="text-3xl font-bold">Projects</h2>
+
+  <div className="mt-10 grid gap-8 md:grid-cols-2">
+
+    {/* Project 1 */}
+    <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg">
       <img
         src="/projects/dashboard.png"
-        alt="Project"
+        alt="Sentiment Analysis"
         className="mb-6 rounded-xl border border-slate-800"
       />
-        <div className="mt-8 rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg">
-          <p className="text-sm font-semibold uppercase tracking-widest text-blue-400">
-            Featured Project
-          </p>
 
-          <h3 className="mt-3 text-2xl font-bold">
-            Sentiment Analysis Naive Bayes
-          </h3>
+      <p className="text-sm font-semibold uppercase tracking-widest text-blue-400">
+        Featured Project
+      </p>
 
-          <p className="mt-4 text-slate-400">
-            Sistem analisis sentimen berbasis web untuk mengklasifikasikan opini publik menjadi sentimen positif,
-            netral, dan negatif menggunakan metode Naive Bayes serta preprocessing NLP bahasa Indonesia.
-          </p>
+      <h3 className="mt-3 text-2xl font-bold">
+        Sentiment Analysis Naive Bayes
+      </h3>
 
-          <div className="mt-5 flex flex-wrap gap-2">
-            {["Python", "Flask", "MySQL", "NLP", "Scikit-learn"].map((item) => (
-              <span key={item} className="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300">
-                {item}
-              </span>
-            ))}
-          </div>
+      <p className="mt-4 text-slate-400">
+        Sistem analisis sentimen berbasis web menggunakan NLP dan metode Naive Bayes
+        untuk mengklasifikasikan opini publik menjadi positif, netral, dan negatif.
+      </p>
 
-          <a
-            href="https://github.com/AbbashalomRadja/sentiment-analysis-naive-bayes"
-            target="_blank"
-            className="mt-6 inline-block rounded-xl bg-blue-600 px-5 py-3 font-medium transition hover:bg-blue-700"
+      <div className="mt-5 flex flex-wrap gap-2">
+        {["Python", "Flask", "MySQL", "NLP", "Scikit-learn"].map((item) => (
+          <span
+            key={item}
+            className="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300"
           >
-            View Repository
-          </a>
-        </div>
-      </section>
+            {item}
+          </span>
+        ))}
+      </div>
+
+      <div className="mt-6 flex gap-3">
+        <a
+          href="https://github.com/AbbashalomRadja/sentiment-analysis-naive-bayes"
+          target="_blank"
+          className="rounded-xl bg-blue-600 px-5 py-3 font-medium transition hover:bg-blue-700"
+        >
+          Repository
+        </a>
+      </div>
+    </div>
+
+    {/* Project 2 */}
+    <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6 shadow-lg">
+      <img
+        src="/projects/puella.png"
+        alt="PuellaStudio"
+        className="mb-6 rounded-xl border border-slate-800"
+      />
+
+      <p className="text-sm font-semibold uppercase tracking-widest text-pink-400">
+        Frontend Project
+      </p>
+
+      <h3 className="mt-3 text-2xl font-bold">
+        PuellaStudio
+      </h3>
+
+      <p className="mt-4 text-slate-400">
+        Modern nail art studio website dengan AI nail art idea generator,
+        responsive layout, dan aesthetic UI menggunakan React dan Tailwind CSS.
+      </p>
+
+      <div className="mt-5 flex flex-wrap gap-2">
+        {["React", "Tailwind CSS", "Frontend", "UI/UX"].map((item) => (
+          <span
+            key={item}
+            className="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-300"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+
+      <div className="mt-6 flex flex-wrap gap-3">
+        <a
+          href="https://github.com/AbbashalomRadja/puella-studio"
+          target="_blank"
+          className="rounded-xl bg-pink-500 px-5 py-3 font-medium transition hover:bg-pink-600"
+        >
+          Repository
+        </a>
+
+        <a
+          href="https://puella-studio.vercel.app/"
+          target="_blank"
+          className="rounded-xl border border-slate-700 px-5 py-3 font-medium transition hover:bg-slate-800"
+        >
+          Live Demo
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
       <section id="contact" className="mx-auto max-w-6xl px-6 py-20">
         <h2 className="text-3xl font-bold">Contact</h2>
